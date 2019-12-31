@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+<body>
+{#    数据安全性要求高用POST，反之用GET action表示需要提交到的地址 #}
+    <form method="post" action="/login_check">
+        用户名：<input type="text" name="username" value="{{ username }}"><br/>
+        密  码：<input type="password" name="password"><br/>
+        <input type="checkbox" name="remember">记住用户名 <br>
+        <input type="submit" value="登录">
+    </form>
+</body>
+</html>

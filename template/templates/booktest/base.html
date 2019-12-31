@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父模板文件</title>
+</head>
+<body>
+{#    把所有页面相同的内容放到父模板中，不需要放在块中。有些位置页面内容不同，需要在父模板中预留块#}
+    <h1>页面导航条</h1>
+    {% block b1 %}
+        <h1>这是父模板b1块中的内容</h1>
+    {% endblock b1 %}
+    <h1>页面版权信息</h1>
+</body>
+</html>

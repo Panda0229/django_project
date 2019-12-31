@@ -1,0 +1,6 @@
+{#继承父模板时不能有其他的内容#}
+{% extends 'booktest/base.html' %}  {# 父模板的位置是相对于templates的 #}
+{% block b1 %}
+    {{ block.super }}
+    <h1>这是子模板b1块中的内容</h1>
+{% endblock %}

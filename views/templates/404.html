@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404错误</title>
+</head>
+<body>
+{#    在templates中建立404文件，找不到路径时会自动返回自己定义的404.html中的内容#}
+    <h1>页面找不到--{{ request_path }}</h1>
+</body>
+</html>

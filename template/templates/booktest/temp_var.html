@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板变量</title>
+</head>
+<body>
+{#模板变量名是由数字，字母，下划线和点组成的，不能以下划线开头#}
+{#使用模板变量时，.前面的可能是一个字典，可能是一个对象，还可能是一个列表。#}
+
+    使用字典属性: {{ my_dict.title }} <br>
+    使用列表元素: {{ my_list.1 }} <br>
+    使用对象属性: {{ book.btitle }}
+</body>
+</html>
